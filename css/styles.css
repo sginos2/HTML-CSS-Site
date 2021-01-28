@@ -11,6 +11,7 @@ a {
     padding: 15px;
 }
 
+/* NAVBARS */
 .navTop, .navBottom {
     background-color: rgb(255, 183, 0);
     display: flex;
@@ -35,7 +36,9 @@ a {
 .navBottomLinks {
     font-size: 0.75em;
 }
+/* END OF NAVBARS */
 
+/* HEROES */
 .hero {
     width: 100%;
      height: 500px;
@@ -62,6 +65,22 @@ a {
     font-weight: 900;
 }
 
+.recipeHero {
+    width: 100%;
+    height: 500px;
+}
+
+.recipeHeroImage {
+    background-image: url(../images/better-bengal-burger.jpeg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    background-position-y: center;
+}
+/* END OF HEROES */
+
+/* INDEX.HTML CSS */
 .content {
     width: 100%;
     margin: 0 auto;
@@ -78,7 +97,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 15px 0px 15px;
+    padding: 15px 15px 0px 15px;  
 }
 
 .everyday, .where {
@@ -86,35 +105,26 @@ a {
     padding: 20px;
 }
 
-.breakfast, .vegetarian, .cold, .fajita, .muffins, .eggplant, .teriyaki, .sandwiches, .pizza, .city {
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-}
-
-.breakfast {
-    background-image: url(../images/breakfast-ideas.jpg);
-    margin: 15px;
-}
-
-.vegetarian {
-    background-image: url(../images/vegetarian-ideas.jpg);
-    margin: 15px;
-}
-
-.cold {
-    background-image: url(../images/cold-weather-dinners.jpeg);
-    margin: 15px;
-}
-
 .everydayCaption, .healthyCaption, .whereCaption {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.whereCaption {
+    padding-right: 75px;
+}
+
+.healthySubtitle {
+    background-color: white;
+    width: 205px;
+    padding: 5px;
 }
 
 .healthy {
     background-color: lightgray;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 .healthyBody {
@@ -128,55 +138,59 @@ a {
     width: 100%;
 }
 
+.breakfast, .vegetarian, .cold, .fajita, .muffins, .eggplant, .teriyaki, .sandwiches, .pizza, .city {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 15px 15px 0px 15px;
+}
+
+.breakfast {
+    background-image: url(../images/breakfast-ideas.jpg);
+}
+
+.vegetarian {
+    background-image: url(../images/vegetarian-ideas.jpg);
+}
+
+.cold {
+    background-image: url(../images/cold-weather-dinners.jpeg);
+}
+
 .fajita {
     background-image: url(../images/fajita-peppers.jpeg);
-    margin: 15px;
 }
 
 .muffins {
     background-image: url(../images/muffins.jpeg);
-    margin: 15px;
 }
 
 .eggplant {
     background-image: url(../images/eggplant-parmesan.jpg);
-    margin: 15px;
 }
 
 .teriyaki {
     background-image: url(../images/teriyaki-chicken.jpeg);
-    margin: 15px;
 }
 
 .sandwiches {
     background-image: url(../images/burger.jpg);
-    margin: 15px;
+    border: 5px solid lightgray;
 }
 
 .pizza {
     background-image: url(../images/pizza.jpeg);
-    margin: 15px;
+    border: 5px solid lightgray;
 }
 
 .city {
     background-image: url(../images/city-bowl.jpeg);
-    margin: 15px;
+    border: 5px solid lightgray;
 }
+/* END OF INDEX.HTML CSS */
 
-.recipeHero {
-    width: 100%;
-    height: 500px;
-}
 
-.recipeHeroImage {
-    background-image: url(../images/better-bengal-burger.jpeg);
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    position: relative;
-    background-position-y: center;
-}
-
+/* RECIPE.HTML CSS */
 .time {
     background-color: lightgray;
     padding-top: 15px;
@@ -297,17 +311,22 @@ i {
     width: 45%;
 }
 
+.directions {
+    width: 55%;
+}
+
+.ingredients ul, .directions ol {
+    margin-top: 0px;
+}
+
 .ingredients h2, .directions h2 {
     font-size: 1.75em;
     font-weight: 900;
 }
 
-.ingredients span, .directions span {
+.removeDot {
+    list-style-type: none;
     font-weight: 600;
-}
-
-.directions {
-    width: 55%;
 }
 
 video {
@@ -317,3 +336,4 @@ video {
     height: 400px;
     margin: 30px auto;
 }
+/* END OF RECIPE.HTML CSS */
