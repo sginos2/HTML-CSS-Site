@@ -178,21 +178,42 @@ a {
 }
 
 .time {
+    background-color: lightgray;
+    padding-top: 15px;
+}
+
+.time p {
+    margin: 0;
+    padding-left: 225px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.timeBox{
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: lightgray;
     justify-content: space-evenly;
-    padding: 30px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
-.time p {
+.timeBox p {
     margin: 0;
+}
+
+.timeBox span {
+    font-weight: 600;
 }
 
 .timeColOne, .timeColTwo {
     display: flex;
     flex-direction: column;
+}
+
+.timeColOne span, .timeColTwo span {
+    font-weight: 600;
 }
 
 .recipeMain {
@@ -201,6 +222,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .recipeTop {
@@ -211,15 +233,15 @@ a {
 
 .recipeTop p:nth-of-type(1) {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 3em;
+    margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 .recipeTop p:nth-of-type(2) {
     text-align: center;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 .stars {
@@ -256,25 +278,42 @@ i {
     background-color: lightgray;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.15em; 
+    font-size: 1.15em;
 }
 
 .recipeQuote h3 {
     width: 70%;
-
+    opacity: 60%;
 }
 
 .recipeBody {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .ingredients {
-    width: 30%
+    width: 45%;
+}
+
+.ingredients h2, .directions h2 {
+    font-size: 1.75em;
+    font-weight: 900;
+}
+
+.ingredients span, .directions span {
+    font-weight: 600;
 }
 
 .directions {
-    width: 70%;
+    width: 55%;
+}
+
+video {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 400px;
+    margin: 30px auto;
 }
