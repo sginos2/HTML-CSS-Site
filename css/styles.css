@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1em;
 }
 
 a {
@@ -33,7 +33,7 @@ a {
 }
 
 .navBottomLinks {
-    font-size: 15px;
+    font-size: 0.75em;
 }
 
 .hero {
@@ -49,16 +49,17 @@ a {
     position: relative;
 }
 
-.heroText {
+.heroText, .recipeHeroText {
     position: absolute;
     bottom: 70px;
-    left: 450px;
+    left: 430px;
     background-color: white;
     color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 2em;
     text-transform: uppercase;
     padding: 5px 10px;
+    font-weight: 900;
 }
 
 .content {
@@ -77,11 +78,12 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
 }
 
 .everyday, .where {
-    width: 90%;
+    width: 80%;
+    padding: 20px;
 }
 
 .breakfast, .vegetarian, .cold, .fajita, .muffins, .eggplant, .teriyaki, .sandwiches, .pizza, .city {
@@ -92,51 +94,187 @@ a {
 
 .breakfast {
     background-image: url(../images/breakfast-ideas.jpg);
+    margin: 15px;
 }
 
 .vegetarian {
     background-image: url(../images/vegetarian-ideas.jpg);
+    margin: 15px;
 }
 
 .cold {
     background-image: url(../images/cold-weather-dinners.jpeg);
+    margin: 15px;
+}
+
+.everydayCaption, .healthyCaption, .whereCaption {
+    display: flex;
+    flex-direction: row;
 }
 
 .healthy {
     background-color: lightgray;
+    padding: 20px;
 }
 
 .healthyBody {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.healthyImages {
+    width: 100%;
+}
+
 .fajita {
     background-image: url(../images/fajita-peppers.jpeg);
+    margin: 15px;
 }
 
 .muffins {
     background-image: url(../images/muffins.jpeg);
+    margin: 15px;
 }
 
 .eggplant {
     background-image: url(../images/eggplant-parmesan.jpg);
+    margin: 15px;
 }
 
 .teriyaki {
     background-image: url(../images/teriyaki-chicken.jpeg);
+    margin: 15px;
 }
 
 .sandwiches {
     background-image: url(../images/burger.jpg);
+    margin: 15px;
 }
 
 .pizza {
     background-image: url(../images/pizza.jpeg);
+    margin: 15px;
 }
 
 .city {
     background-image: url(../images/city-bowl.jpeg);
+    margin: 15px;
+}
+
+.recipeHero {
+    width: 100%;
+    height: 500px;
+}
+
+.recipeHeroImage {
+    background-image: url(../images/better-bengal-burger.jpeg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    background-position-y: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgray;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+
+.time p {
+    margin: 0;
+}
+
+.timeColOne, .timeColTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipeMain {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.recipeTop {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.recipeTop p:nth-of-type(1) {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.recipeTop p:nth-of-type(2) {
+    text-align: center;
+    margin: 10px;
+}
+
+.stars {
+    color: darkred;
+}
+
+.recipeButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px 30px;
+}
+
+i {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.recipeQuote {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.15em; 
+}
+
+.recipeQuote h3 {
+    width: 70%;
+
+}
+
+.recipeBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.ingredients {
+    width: 30%
+}
+
+.directions {
+    width: 70%;
 }
